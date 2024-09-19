@@ -1,15 +1,10 @@
 # DeCAF
 
-    ____          ______    ___     ______
-   / __ \  ___   / ____/   /   |   / ____/
-  / / / / / _ \ / /       / /| |  / /_    
- / /_/ / /  __// /___    / ___ | / __/    
-/_____/  \___/ \____/   /_/  |_|/_/       
-                                          
+## The Dependency Confusion Attack Finder (DeCAF) is a Python-based tool developed to help detect potential dependency confusion and typosquatting vulnerabilities in Python projects.
 
-## The Dependency Confusion Attack Finder (DeCAF) is a Python-based tool developed to help organizations detect potential dependency confusion and typosquatting vulnerabilities in their Python projects.
+In early 2021, a security researcher named Alex Birsan discovered a novel supply chain attack vector called dependency confusion. This attack exploits the way package managers resolve dependencies, potentially allowing malicious code to infiltrate software projects. DeCAF attempts to assist in finding potentially malicious packages for Python projects based on the requirements.txt file.
 
-Usage:
+## Usage:
 
 > python decaf.py requirements.txt --allowlist allowlist.txt
 
@@ -26,9 +21,12 @@ Quite simply, DeCAF works in these steps:
 5.	Typosquatting Checks: Searches for packages with similar names on PyPI to detect possible typosquatting attempts.
 6.	Reporting: Generates alerts with color-coded messages to indicate the severity and type of each finding.
 
-Output:
+## Output:
 
-[TYPO ALERT] (Cyan): Potential typos in requirements.txt.
-[ALERT] (Red): Exact package name exists on PyPI (dependency confusion risk).
-[WARNING] (Yellow): Similar package names found on PyPI (typosquatting risk).
-[INFO] (Green): Package is in the allowlist and skipped.
+### [TYPO ALERT] (Cyan): Potential typos in requirements.txt.
+### [ALERT] (Red): Exact package name exists on PyPI (dependency confusion risk).
+### [WARNING] (Yellow): Similar package names found on PyPI (typosquatting risk).
+### [INFO] (Green): Package is in the allowlist and skipped.
+
+## Screenshot:
+![alt text](image.png)
