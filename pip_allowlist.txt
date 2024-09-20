@@ -1,4 +1,4 @@
-# Standard Popular Python Packages Allowlist
+### Note: These must be trusted, common use packages available on PyPI. Adding internal package names here negates the purpose of this tool. ###
 
 absl-py
 aiohttp

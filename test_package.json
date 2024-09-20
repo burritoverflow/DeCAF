@@ -1,0 +1,16 @@
+{
+    "dependencies": {
+      "react": "^17.0.2",
+      "express": "^4.17.1",
+      "lodsh": "^4.17.21",
+      "crypto-random-str": "1.0.0",
+      "aws-lib": "2.3.4",
+      "awsauth": "2.3.4"
+    },
+    "devDependencies": {
+      "jest": "^27.0.6",
+      "webpack": "^5.38.1",
+      "test": "^1.0.0"
+    }
+  }
+  
