@@ -10,10 +10,10 @@ Note: Checking the names of internal dependencies on a package manager means sen
 
 ### Command Line Arguments
 
-package_file: Path to the requirements.txt (for pip) or package.json (for npm) file. Required
---package-manager: Specify the package manager (pip or npm). Required
--pm: alias for --package-manager
---allowlist: (Optional) Path to the allowlist file. Defaults to allowlist.txt in the current directory
+**Required:** package_file: Path to the requirements.txt (for pip) or package.json (for npm) file.   
+**Required:** --package-manager: Specify the package manager (pip or npm).  
+-pm: alias for --package-manager  
+--allowlist: (Optional) Path to the allowlist file. Defaults to allowlist.txt in the current directory  
 -al: alias for --allowlist
 
 ### Example Usage
@@ -26,9 +26,9 @@ Npm:
 
 The allowlist is a plain text file containing package names to exclude from alerts. It helps reduce false positives by ignoring known legitimate packages. Including the allowlist is optional. If an allowlist is not specified, DeCAF will attempt to find 'allowlist.txt' in the directory. To use a custom allowlist, just supply a path to the txt file.
 
-Format: One package name per line.
-Comments: Lines starting with # are ignored.
-Case-Insensitive: Package names are compared in a case-insensitive manner.
+Format: One package name per line.  
+Comments: Lines starting with # are ignored.  
+Case-Insensitive: Package names are compared in a case-insensitive manner.  
 
 DeCAF also includes a sample requirements file, 'test_requirements.txt', and a sample 'test_package.json'.
 
